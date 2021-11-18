@@ -1,0 +1,55 @@
+.page {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("./images/festival2-1920x1180\ \(1\).jpeg");
+  background-size: cover;
+  margin: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(9, 150px);
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  margin: 50px;
+}
+
+.key {
+  border: black 0.4rem solid;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  text-align: center;
+  color: white;
+  transition: all 0.07s ease-in-out;
+  touch-action: manipulation;
+}
+
+.kdb {
+  display: block;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1350px) {
+  .content {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
+
+.play-sound {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
