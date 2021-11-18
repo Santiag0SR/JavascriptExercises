@@ -1,0 +1,47 @@
+.page {
+  background-image: url(./images/keith-misner-h0Vxgz5tyXA-unsplash.jpeg);
+  background-size: cover;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 10px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*transform: translate(-3px);*/
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background-color: lightblue;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05;
+  transition-timing-function: cubic-bezier(0.42, 0, 0, 4.22);
+}
+
+.hour-hand {
+}
+
+.min-hand {
+}
+
+.second-hand {
+}
